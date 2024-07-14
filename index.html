@@ -158,15 +158,49 @@
             width: 100%;
         }
     }
+
+.custom-select {
+    display: block;
+    width: 100%;
+    padding: 5px 20px 5px 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
      </style>
 </head>
 <body>
     <div class="container">
-        <h2>Mary's Hospital Prescription Form - 2</h2>
+        <h2>Mary's Hospital Prescription Form</h2>
         <div id="google-sheet-form">
           <div class="form-group">
             <label for="department">Department:</label>
-            <input type="text" id="department" name="department" placeholder="Enter department" required>
+            <select id="department" name="department" class="custom-select" required>
+                <option value="General Medicine">General Medicine</option>
+                <option value="Gynaecology">Gynaecology</option>
+                <option value="Paediatric">Paediatric</option>
+                <option value="ENT">ENT</option>
+                <option value="Ophthalmology">Ophthalmology</option>
+                <option value="Dentistry">Dentistry</option>
+                <option value="Orthopaedics">Orthopaedics</option>
+                <option value="General Surgery">General Surgery</option>
+                <option value="Aryuvedic">Aryuvedic</option>
+            </select>
+            <!-- <input type="text" id="department" name="department" placeholder="Enter department" required> -->
           </div>
           <div class="form-group">
             <label for="name">Name:</label>
@@ -182,7 +216,7 @@
           </div>
           <div class="form-group">
             <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
+            <select id="gender" name="gender" required class="custom-select">
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Other">Other</option>
@@ -190,7 +224,11 @@
           </div>
           <div class="form-group">
             <label for="category">Category:</label>
-            <input type="text" id="category" name="category" placeholder="Enter category" required>
+            <select id="category" name="category" required class="custom-select">
+                <option value="GENERAL">GENERAL</option>
+                <option value="ANC">ANC</option>
+            </select>
+            <!-- <input type="text" id="category" name="category" placeholder="Enter category" required> -->
           </div>
           <!-- <div class="form-group">
             <label for="date">Date:</label>
@@ -336,13 +374,13 @@
                 <td>
                     <ol>
                         <li>
-                            अस्पताल में प्राप्त नहीं होने वाली दवाईयां जन औषधि केंद्र से खरीदें जो बाजार से सस्ती है। चिकित्सालय परिसर में धुम्रपान, कूढ़ा-करकट, नशा करना साखत मना है। अस्पताल में प्राप्त नहीं होने वाली दवाईयां जन औषधि केंद्र से खरीदें जो बाजार से सस्ती है। 
+                            माः मुख्यमंत्री स्वास्थ्य बीमा योजना के अन्तर्गत 1.75 (एक लाख पचहत्तर हजार) रुपये (पचास हजार धन 1.25 (एक लाख पच्चीस हजार) तक निःशुल्क इलाज चिकित्सालय में भर्ती होने पर सभी बी.पी.एल, एच.ए.पी.एल.उत्तराखण्ड निवासियों के लिए उपलब्ध है। (केवल सरकारी कर्मचारी, पेंशनर एवं इनकम टैक्स देने वाले व्यक्तियों का छोडकर)
                         </li>
                         <li>
-                            अस्पताल में प्राप्त नहीं होने वाली दवाईयां जन औषधि केंद्र से खरीदें जो बाजार से सस्ती है। चिकित्सालय परिसर में धुम्रपान, कूढ़ा-करकट, नशा करना साखत मना है। अस्पताल में प्राप्त नहीं होने वाली दवाईयां जन औषधि केंद्र से खरीदें जो बाजार से सस्ती है। 
+                            गर्भ में पल रहे धूण की दयनीय अपराध है। बेटी को सम्मान दो जीवन उसको दान दो अनदेखी बिटिया करे पुकार मत करो यह अत्याचार, मैं भी हूं. ,एक अंश तुम्हारा, मूझ से ही हैं वंश तुम्हारा ।
                         </li>
                         <li>
-                            अस्पताल में प्राप्त नहीं होने वाली दवाईयां जन औषधि केंद्र से खरीदें जो बाजार से सस्ती है। चिकित्सालय परिसर में धुम्रपान, कूढ़ा-करकट, नशा करना साखत मना है। अस्पताल में प्राप्त नहीं होने वाली दवाईयां जन औषधि केंद्र से खरीदें जो बाजार से सस्ती है। 
+                            बी. पी.एल. परिवार के व्यक्तियों को गम्भीर रोगों के उपचार के लिए राज्य निधि से 1.50 (एक लाख पचास हजार) तक की आर्थिक सहायता उपलब्ध करायी जाती है। अधिक जानकारी हेतु मुख्य चिकित्सा अधीक्षक/ मुख्य चिकित्सा अधिकारी के कार्यालय से संपर्क करें।
                         </li>
                     </ol>                       
                 </td>
